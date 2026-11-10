@@ -88,7 +88,7 @@ export const profile = {
   name: "Abdurezak Shemsu",
   initials: "AS",
   title: "Full-Stack Developer",
-  subtitle: "Mobile App Developer · AI Enthusiast",
+  subtitle: "Software Enginer(soon) · AI Enthusiast",
   bio: "Building digital experiences, exploring technology, and sharing my journey.",
   image: "/profile.jpg",
   availability: "Open to opportunities",
