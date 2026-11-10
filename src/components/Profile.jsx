@@ -31,7 +31,7 @@ export default function Profile() {
       </div>
 
       <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-4 py-2 text-xs text-gold-light">
-        <Sparkles size={13} />
+      
         {profile.availability}
       </div>
 
