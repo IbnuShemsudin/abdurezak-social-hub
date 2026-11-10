@@ -1,0 +1,109 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #c6a46a;
+  --color-gold-light: #e1c48d;
+  --color-obsidian: #0b0b0c;
+  --color-surface: #141416;
+  --color-surface-light: #1d1d20;
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-heading: "Manrope", sans-serif;
+}
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #f5f1e9;
+  background: #0b0b0c;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #0b0b0c;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #c6a46a;
+  color: #0b0b0c;
+}
+
+.gold-gradient {
+  background: linear-gradient(
+    120deg,
+    #e5cc9b 0%,
+    #c6a46a 45%,
+    #947345 100%
+  );
+}
+
+.gold-text {
+  background: linear-gradient(
+    120deg,
+    #f0d9aa,
+    #c6a46a,
+    #a9874e
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.profile-glow {
+  box-shadow:
+    0 0 0 1px rgba(198, 164, 106, 0.5),
+    0 0 35px rgba(198, 164, 106, 0.13);
+}
+
+.social-card {
+  transition:
+    transform 250ms ease,
+    border-color 250ms ease,
+    background-color 250ms ease;
+}
+
+.social-card:not([aria-disabled="true"]):hover {
+  transform: translateY(-3px);
+  border-color: rgba(198, 164, 106, 0.65);
+  background-color: #1d1d20;
+}
+
+.social-card:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #c6a46a;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

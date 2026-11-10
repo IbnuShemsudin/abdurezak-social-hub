@@ -1,0 +1,23 @@
+{
+  "name": "abdurezak-social-hub",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "latest",
+    "lucide-react": "^1.70.0",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "latest",
+    "@vitejs/plugin-react": "latest",
+    "tailwindcss": "^4.0.0",
+    "vite": "latest"
+  }
+}
